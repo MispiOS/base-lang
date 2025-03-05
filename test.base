@@ -1,0 +1,51 @@
+function main() {
+    char a = 1;
+    char b = 6;
+    char c = a + b;
+    string temp = "salut";
+    array autre_temp = [];
+    int num = 123456;
+
+    if (condition) {
+
+    } else-if (a || b == & % b) {
+
+    } else
+
+    switch (condition) {
+    } case {
+
+    }
+}
+
+/*
+This is a comment
+Which also happens to be
+multi-line
+*/
+
+// This is a single line comment
+
+=
++
+-
+*
+/
+%
+**
+&&
+||
+&
+|
+!
+^
+<<
+>>
+==
+<
+>
+<=
+>=
+!=
+!<
+!>

@@ -1,0 +1,25 @@
+{
+  "name": "base-lang",
+  "displayName": "Base Lang",
+  "description": "Syntax Highlighting for Base Lang (.base)",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.97.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "base",
+      "aliases": ["Base Lang", "base"],
+      "extensions": [".base"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "base",
+      "scopeName": "source.base",
+      "path": "./syntaxes/base.tmLanguage.json"
+    }]
+  }
+}

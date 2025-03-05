@@ -1,0 +1,128 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Base Lang",
+	"patterns": [
+		{
+			"include": "#comment"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#constant"
+		},
+		{
+			"include": "#entity"
+		},
+		{
+			"include": "#invalid"
+		},
+		{
+			"include": "#markup"
+		},
+		{
+			"include": "#meta"
+		},
+		{
+			"include": "#storage"
+		},
+		{
+			"include": "support"
+		},
+		{
+			"include": "#variable"
+		}
+	],
+	"repository": {
+		"comment": {
+			"patterns": [{
+				"name": "comment.line.base",
+				"match": "//[^\n]*"
+			},
+			{
+				"name": "comment.block.base",
+				"begin": "/\\*",
+				"end": "\\*/"
+			}
+		]
+		},
+
+		"constant": {
+			"patterns": [{
+				"name": "constant.numeric.base",
+				"match": "\\b\\d+(\\.\\d+)?\\b"
+			}
+		]
+		},
+
+		"entity": {
+
+		},
+
+		"invalid": {
+
+		},
+
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.base",
+				"match": "\\b(if|else|else-if|while|return)\\b"
+			},
+			{
+				"name": "keyword.operator.base",
+				"match": "[+\\-*/=<>!\\|&%^]+"
+			},
+			{
+				"name": "keyword.control.switch.base",
+				"match": "\\b(switch|case)\\b"
+			}
+		]
+		},
+
+		"markup": {
+
+		},
+
+		"meta": {
+
+		},
+
+		"storage" : {
+			"patterns": [
+				{
+					"name": "storage.type.base",
+					"match": "\\b(function|class|string|int|float|bool|char|array)\\b"
+				},
+				{
+					"name": "storage.modifier.base",
+					"match": "\\b(public|private|abstract)\\b"
+				}
+			]
+		},
+
+		"strings": {
+			"name": "string.quoted.double.base",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.base",
+					"match": "\\\\."
+				}
+			]
+		},
+
+		"support": {
+
+		},
+
+		"variable": {
+
+		}
+	},
+	"scopeName": "source.base",
+	"fileTypes": ["base"]
+}
