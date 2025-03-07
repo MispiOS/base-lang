@@ -2,7 +2,6 @@ function main() {
     char a = 1;
     char b = 6;
     char c = a + b;
-    string temp = "salut";
     array autre_temp = [];
     int num = 123456;
 

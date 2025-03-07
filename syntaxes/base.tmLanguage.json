@@ -94,7 +94,7 @@
 			"patterns": [
 				{
 					"name": "storage.type.base",
-					"match": "\\b(function|class|string|int|float|bool|char|array)\\b"
+					"match": "\\b(function|class|int|float|bool|char|array|void)\\b"
 				},
 				{
 					"name": "storage.modifier.base",
