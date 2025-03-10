@@ -54,6 +54,10 @@
 			"patterns": [{
 				"name": "constant.numeric.base",
 				"match": "\\b\\d+(\\.\\d+)?\\b"
+			},
+			{
+				"name": "constant.language.base",
+				"match": "\\b(true|false|void)\\b"
 			}
 		]
 		},
